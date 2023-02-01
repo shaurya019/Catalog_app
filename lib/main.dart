@@ -1,3 +1,4 @@
+import 'package:features/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,10 +19,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       themeMode: ThemeMode.light,
       theme: ThemeData(primarySwatch: Colors.deepPurple,fontFamily:GoogleFonts.lato().fontFamily,),
-      initialRoute: "/login",
+      initialRoute: MyRoutes.homeRoute,
       routes: {
-        "/":(context) => MyHomePage(title: 'Flutter Feautres'),
-        "/login":(context) => MyLoginPage(),
+        "/": (context) => MyLoginPage(),
+        MyRoutes.homeRoute: (context) => MyHomePage(title: 'Catalog App',),
+        MyRoutes.loginRoute: (context) => MyLoginPage()
       },
     );
   }

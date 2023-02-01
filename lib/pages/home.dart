@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -21,8 +23,11 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text("Welcome to $days days of flutter by $name"),
+        child: Container(
+          child: Text("Welcome to $days days of flutter by $name"),
+        ),
       ),
+      drawer: MyDrawer(),
     );
   }
 }
