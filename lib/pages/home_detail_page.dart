@@ -1,3 +1,4 @@
+import 'package:features/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -23,7 +24,7 @@ class HomeDetailPage extends StatelessWidget {
           children: [
             "\$${catalog.price}".text.bold.xl4.red800.make(),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: (){},
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
                     MyTheme.darkBluishColor,
@@ -60,6 +61,11 @@ class HomeDetailPage extends StatelessWidget {
                             .make(),
                         catalog.desc.text.textStyle(context.captionStyle).xl.make(),
                         10.heightBox,
+                        "Dolor sea takimata ipsum sea eirmod aliquyam est. Eos ipsum voluptua eirmod elitr, no dolor dolor amet eirmod dolor labore dolores magna. Amet vero vero vero kasd, dolore sea sed sit invidunt nonumy est sit clita."
+                            .text
+                            .textStyle(context.captionStyle)
+                            .make()
+                            .p16()
                       ],
                     ).py64(),
                   ),
