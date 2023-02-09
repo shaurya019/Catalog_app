@@ -46,7 +46,10 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: MyTheme.creamColor,
       floatingActionButton: FloatingActionButton(
         onPressed: ()=>Navigator.pushNamed(context, MyRoutes.cartRoute),
-        child: Icon(CupertinoIcons.cart),
+        child: Icon(
+          CupertinoIcons.cart,
+          color: Colors.white,
+        ),
       ),
       appBar: AppBar(
         title: Text("Catalog App"),
