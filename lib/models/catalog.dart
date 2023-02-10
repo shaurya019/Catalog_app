@@ -1,4 +1,15 @@
 class CatalogModel {
+
+
+  //singleton Class
+
+  static final catModel = CatalogModel._internal();
+
+  CatalogModel._internal();
+
+  factory CatalogModel() => catModel;
+
+
   static List<Item> items = [
     Item(
         id: 1,
